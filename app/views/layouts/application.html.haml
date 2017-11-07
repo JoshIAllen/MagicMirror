@@ -1,17 +1,19 @@
 !!!
 %html
   %head
-    %title Magic Mirror
-    = stylesheet_link_tag 'application', 'media' => 'all', 'data-turbolinks-track' => true
-    = javascript_include_tag 'application', 'data-turbolinks-track' => true
+    %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
+    %title Google Auth Example App
+    = stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true
+    = javascript_include_tag "application", "data-turbolinks-track" => true
     = csrf_meta_tags
-
   %body
-    %h1.title Magic Mirror
-    #main
-      - if flash[:notice]
-        #notice.message= flash[:notice]
-      - elsif flash[:warning]
-        #warning.message= flash[:warning]
-
+    %div
+      - if current_user
+        Signed in as
+        = succeed "!" do
+          %strong= current_user.name
+        = link_to "Sign out", signout_path, id: "sign_out"
+      - else
+        = link_to "Sign in with Google", "/auth/google_oauth2", id: "sign_in"
+    %div
       = yield
