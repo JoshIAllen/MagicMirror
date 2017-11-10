@@ -11,7 +11,8 @@ To get code from github
 2. $ git pull https://github.com/JoshIAllen/MagicMirror
 
 To push code updates to github
-1. $ cd into magic mirror directory
-2. $ git add .
-3. $ git commit -m "a message"
-4. $ git push origin master
+1. save all modified files
+2. cd into magic mirror directory
+3. $ git add .
+4. $ git commit -m "a message"
+5. $ git push origin master
