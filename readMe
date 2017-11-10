@@ -13,6 +13,7 @@ To get code from github
 To push code updates to github
 1. save all modified files
 2. cd into magic mirror directory
-3. $ git add .
-4. $ git commit -m "a message"
-5. $ git push origin master
+3. pull latest version and resolve any merge conflicts
+4. $ git add .
+5. $ git commit -m "a message"
+6. $ git push origin master
