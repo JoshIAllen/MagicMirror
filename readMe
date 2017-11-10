@@ -5,3 +5,13 @@ DB commands:
     rake db:seed
     
 run command: $ rails server -p $PORT -b $IP
+
+To get code from github
+1. in console, cd into yhe magicmirror project
+2. $ git pull https://github.com/JoshIAllen/MagicMirror
+
+To push code updates to github
+1. $ cd into magic mirror directory
+2. $ git add .
+3. $ git commit -m "a message"
+4. $ git push origin master
