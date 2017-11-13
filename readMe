@@ -1,13 +1,22 @@
-DB commands:
+  ____                       _   __  __        
+ |  _ \    ___    __ _    __| | |  \/  |   ___ 
+ | |_) |  / _ \  / _` |  / _` | | |\/| |  / _ \
+ |  _ <  |  __/ | (_| | | (_| | | |  | | |  __/
+ |_| \_\  \___|  \__,_|  \__,_| |_|  |_|  \___|
+ 
+In order to setup the MagicMirror run these commands in the bash:
 
     rake db:create
     rake db:migrate
     rake db:seed
     
-run command: $ rails server -p $PORT -b $IP
+In order to run the MagicMirror run the following command:    
+     
+    rails server -p $PORT -b $IP
+
 
 To get code from github
-1. in console, cd into yhe magicmirror project
+1. in console, cd into the magicmirror project
 2. $ git pull https://github.com/JoshIAllen/MagicMirror
 
 To push code updates to github
