@@ -30,3 +30,8 @@ In order to setup the MagicMirror run these commands in the bash:
 
 In order to run the MagicMirror run the following command:    
     rails server -p $PORT -b $IP
+    
+    
+    
+    
+test update
