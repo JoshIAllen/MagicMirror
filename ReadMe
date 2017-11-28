@@ -7,19 +7,9 @@
 
 To get code for first time
 1. In console, cd into your workspace
-2. $ git clone https://github.com/JoshIAllen/MagicMirror
 
-To get latest version of code from github
-1. in console, cd into the magicmirror project
-2. $ git pull
 
-To push code updates to github
-1. save all modified files
-2. cd into magic mirror directory
-3. pull latest version and resolve any merge conflicts
-4. $ git add .
-5. $ git commit -m "a message"
-6. $ git push origin master
+
 
 In order to setup the MagicMirror run these commands in the bash:
     
@@ -29,9 +19,9 @@ In order to setup the MagicMirror run these commands in the bash:
     $ rake db:seed
 
 In order to run the MagicMirror run the following command:    
-    rails server -p $PORT -b $IP
     
     
+    rails s -b $IP -p $PORT
     
-    
-test update another test
+    netstat -plntu | grep 3000
+    kill -9 pid
