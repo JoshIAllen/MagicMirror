@@ -3,6 +3,7 @@ class MirrorsettingsController < ApplicationController
         render 'mirrorsettings/index.html.erb'
     end
     def mirrorsettings
+        @records = NewsFeed.records
         render 'mirrorsettings/index.html.erb'
     end
 end
