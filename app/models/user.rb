@@ -9,4 +9,8 @@ class User < ActiveRecord::Base
       user.save!
     end
   end
+  
+  def logged_in?
+    user.is_null?
+  end
 end
