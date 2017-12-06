@@ -2,6 +2,7 @@ require 'rss'
 require 'open-uri'
 
 class NewsFeed
+    
     def self.records
         url = 'http://feeds.bbci.co.uk/news/rss.xml'
         open(url) do |rss|
